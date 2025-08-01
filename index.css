@@ -1,0 +1,39 @@
+/* 大标题 */
+h1 {
+    text-align: center;
+}
+
+/* 人物卡 */
+.card {
+    width: 400px;
+    height: 110px;
+    border: 3px solid #D76F5A;
+    border-radius: 12px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+/* 头像框 */
+.portrait {
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    background-image: url(image/portrait.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 20px;
+}
+
+/* 卡内文字 */
+.word {
+    margin: 6px;
+}
+
+.word-xmtx {
+    padding-bottom: 6px;
+    margin: 6px;
+    border-bottom: 1.5px solid #D76F5A;
+}
