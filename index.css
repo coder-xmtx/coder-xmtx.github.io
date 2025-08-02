@@ -61,13 +61,15 @@ h1 {
 .card {
     width: 400px;
     height: 110px;
-    border: 3px solid #D76F5A;
+    border: 3px solid #181E24;
     border-radius: 12px;
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     margin: 0 auto;
+    background-color: #181E24;
+    color: #E8E9EA;
 }
 
 /* 头像框 */
@@ -78,15 +80,16 @@ h1 {
     background-image: url(image/portrait.webp);
     background-repeat: no-repeat;
     margin-right: 20px;
+    border-radius: 5px;
 }
 
 /* 卡内文字 */
 .word {
-    margin: 6px;
+    margin: 8px;
 }
 
 .word-xmtx {
     padding-bottom: 6px;
-    margin: 6px;
-    border-bottom: 1.5px solid #D76F5A;
+    margin: 8px;
+    border-bottom: 2px solid #63B3FF;
 }
