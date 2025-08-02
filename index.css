@@ -1,3 +1,36 @@
+/* 清除默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 顶部栏 */
+.top {
+    padding-left: 10px;
+    background-color: #181E24;
+    height: 50px;
+    line-height: 50px;
+}
+
+.top span {
+    font-weight: 700;
+    color: #C5C7C8;
+}
+
+.top a {
+    display: inline-block;
+    color: #C5C7C8;
+    font-weight: 700;
+    padding: 0 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.top a:hover {
+    color: #63B3FF;
+    background-color: #293c50;
+}
+
 /* 大标题 */
 h1 {
     text-align: center;
