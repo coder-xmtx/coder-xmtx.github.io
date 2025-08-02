@@ -21,7 +21,7 @@ h1 {
     width: 100px;
     height: 100px;
     background-size: 100% 100%;
-    background-image: url(image/portrait.png);
+    background-image: url(image/portrait.webp);
     background-repeat: no-repeat;
     background-position: left center;
     margin-right: 20px;
