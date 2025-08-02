@@ -4,8 +4,13 @@
     margin: 0;
 }
 
+/* body样式 */
+body {
+    background-color: #090E13;
+}
+
 /* 顶部栏 */
-.top {
+.nav {
     padding-left: 10px;
     background-color: #181E24;
     height: 50px;
@@ -22,13 +27,13 @@
     margin: auto 0;
 }
 
-.top span {
+.nav span {
     padding: 0 10px;
     font-weight: 700;
     color: #63B3FF;
 }
 
-.top a {
+.nav a {
     display: inline-block;
     color: #C5C7C8;
     font-weight: 700;
@@ -37,22 +42,30 @@
     border-radius: 5px;
 }
 
-.top a:hover {
+.nav a:hover {
     color: #63B3FF;
     background-color: #293c50;
 }
 
-.top input {
+.nav input {
     border: 0px solid;
     border-radius: 5px;
-    margin: auto 30px;
+    margin: auto 0;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 5px;
     height: 30px;
     background-color: #24292F;
     color: #C5C7C8;
 }
 
+.nav input:focus {
+    outline: 2px solid #63B3FF;
+}
+
 /* 大标题 */
 h1 {
+    color: #E8E9EA;
     text-align: center;
     margin: 10px;
 }
@@ -61,13 +74,11 @@ h1 {
 .card {
     width: 400px;
     height: 110px;
-    border: 3px solid #181E24;
-    border-radius: 12px;
+    border: 3px solid transparent;
+    border-radius: 10px;
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+    margin: 30px auto;
     background-color: #181E24;
     color: #E8E9EA;
 }
@@ -79,16 +90,20 @@ h1 {
     background-size: 100% 100%;
     background-image: url(image/portrait.webp);
     background-repeat: no-repeat;
+    margin: auto 0;
     margin-right: 20px;
     border-radius: 5px;
 }
 
 /* 卡内文字 */
 .word {
+    font-size: 16px;
     margin: 8px;
 }
 
 .word-xmtx {
+    font-size: 20px;
+    font-weight: 700;
     padding-bottom: 6px;
     margin: 8px;
     border-bottom: 2px solid #63B3FF;
