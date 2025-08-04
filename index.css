@@ -1,65 +1,87 @@
-/* 清除默认样式 */
+/* --- 清除默认样式 --- */
 * {
     padding: 0;
     margin: 0;
 }
 
-/* body样式 */
+/* --- 全局样式 --- */
 body {
     background-color: #090E13;
 }
 
-/* 顶部栏 */
-.nav {
-    padding-left: 10px;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- 顶部栏 --- */
+.header {
     background-color: #181E24;
     height: 50px;
+}
+
+/* logo栏 */
+.header .logo {
+    float: left;
+    height: 50px;
     line-height: 50px;
-    display: flex;
+    margin-left: 20px;
 }
 
-.home {
-    width: 25px;
-    height: 25px;
-    background-size: 100% 100%;
-    background-image: url(image/home.svg);
-    background-repeat: no-repeat;
-    margin: auto 0;
+.header .logo img {
+    float: left;
+    margin: 10px 0;
 }
 
-.nav span {
-    padding: 0 10px;
+.header .logo span {
+    float: left;
     font-weight: 700;
     color: #63B3FF;
+    margin: auto 10px;
 }
 
-.nav a {
-    display: inline-block;
+/* 导航栏 */
+.header .nav {
+    float: left;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.header .nav ul li {
+    float: left;
+    line-height: 50px;
+    margin: 0 10px;
+}
+
+.header .nav ul li a {
     color: #C5C7C8;
     font-weight: 700;
-    padding: 0 15px;
-    text-decoration: none;
+    padding: 10px 15px;
     border-radius: 5px;
 }
 
-.nav a:hover {
+.header .nav li a:hover {
     color: #63B3FF;
     background-color: #293c50;
 }
 
-.nav input {
-    border: 0px solid;
+/* 搜索框 */
+.header input {
+    float: right;
+    border: 0;
     border-radius: 5px;
-    margin: auto 0;
-    margin-left: auto;
-    margin-right: 20px;
+    margin: 10px 20px;
     padding: 5px;
     height: 30px;
+    width: 140px;
     background-color: #24292F;
-    color: #C5C7C8;
+    color: #868788;
 }
 
-.nav input:focus {
+.header input:focus {
     outline: 2px solid #63B3FF;
 }
 
@@ -72,7 +94,7 @@ h1 {
 
 /* 人物卡 */
 .card {
-    width: 400px;
+    width: 600px;
     height: 110px;
     border: 3px solid transparent;
     border-radius: 10px;
