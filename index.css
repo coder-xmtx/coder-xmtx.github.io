@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 /* --- 全局样式 --- */
 body {
     background-color: #090E13;
@@ -98,11 +109,14 @@ a {
 h1 {
     color: #E8E9EA;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
+    font-size: 40px;
 }
 
+/* --- 左栏 --- */
 /* --- 主信息 --- */
 .left {
+    float: left;
     width: 300px;
 }
 
@@ -208,4 +222,64 @@ h1 {
     color: #fff;
     font-weight: 400;
     margin: 20px;
+}
+
+/* --- 右栏 --- */
+.right {
+    float: right;
+    width: 880px;
+}
+
+.column-left {
+    float: left;
+    width: 780px;
+}
+
+.right ul li {
+    border-radius: 20px;
+    height: 90px;
+    width: 840px;
+    background-color: #181E24;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.column-left a {
+    display: block;
+    margin: 0px 0 10px 0px;
+    border-left: 6px solid #63B3FF;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.column-left p {
+    margin: 20px 0 0px 30px;
+    color: #cfcfcf;
+    font-size: 16px;
+}
+
+.column-left a:hover {
+    color: #63B3FF;
+}
+
+.right .column-right {
+    float: right;
+    line-height: 85px;
+}
+
+.right .column-right a {
+    display: block;
+    height: 90px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #283747;
+    color: #63B3FF;
+    font-size: 40px;
+    text-align: center;
+}
+
+.right .column-right a:hover {
+    background-color: #324457;
 }
