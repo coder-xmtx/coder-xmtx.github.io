@@ -17,6 +17,13 @@ a {
     text-decoration: none;
 }
 
+/* 版心 */
+.heart {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+}
+
 /* --- 顶部栏 --- */
 .header {
     background-color: #181E24;
@@ -74,6 +81,7 @@ a {
     border: 0;
     border-radius: 5px;
     margin: 10px 20px;
+    margin-left: 0;
     padding: 5px;
     height: 30px;
     width: 140px;
@@ -85,48 +93,119 @@ a {
     outline: 2px solid #63B3FF;
 }
 
-/* 大标题 */
+
+/* --- 大标题 --- */
 h1 {
     color: #E8E9EA;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
-/* 人物卡 */
-.card {
-    width: 600px;
-    height: 110px;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    display: flex;
-    padding: 20px 10px 20px 10px;
-    margin: 30px auto;
-    background-color: #181E24;
-    color: #E8E9EA;
+/* --- 主信息 --- */
+.left {
+    width: 300px;
 }
 
-/* 头像框 */
-.portrait {
-    width: 100px;
-    height: 100px;
-    background-size: 100% 100%;
-    background-image: url(image/portrait.webp);
-    background-repeat: no-repeat;
-    margin: auto 0;
-    margin-right: 20px;
-    border-radius: 5px;
+.info {
+    width: 300px;
+    background: #181E24;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-/* 卡内文字 */
-.word {
+/* 头像 */
+.info p .portrait {
+    text-align: center;
+}
+
+.info img {
+    width: 90%;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.x-line {
+    height: 6px;
+    width: 36px;
+    background-color: #63B3FF;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+/* 个性签名 */
+.info p {
+    text-align: center;
     font-size: 16px;
-    margin: 8px;
+    color: #9B9B9B;
+    margin-bottom: 5px;
 }
 
-.word-xmtx {
-    font-size: 20px;
-    font-weight: 700;
-    padding-bottom: 6px;
-    margin: 8px;
-    border-bottom: 2px solid #63B3FF;
+/* 社交账号 */
+.info .relation {
+    width: 30px;
+    margin: 0 auto;
+}
+
+.info .relation a {
+    display: block;
+}
+
+.info .relation a img {
+    width: 30px;
+}
+
+.info .relation a:hover img {
+    background-color: #63B3FF;
+}
+
+/* --- 等级 --- */
+.level {
+    width: 300px;
+    background: #181E24;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.level h3 {
+    border-left: 6px solid #63B3FF;
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.level p {
+    color: #fff;
+    font-weight: 400;
+    margin: 20px;
+}
+
+/* --- 描述 --- */
+.describe {
+    width: 300px;
+    background: #181E24;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.describe h3 {
+    border-left: 6px solid #63B3FF;
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.describe p {
+    color: #fff;
+    font-weight: 400;
+    margin: 20px;
 }
