@@ -1,4 +1,4 @@
-/* --- 清除默认样式 --- */
+/* === 清除默认样式 === */
 * {
     padding: 0;
     margin: 0;
@@ -15,27 +15,31 @@
     clear: both;
 }
 
-/* --- 全局样式 --- */
+
+/* === 全局样式 === */
 body {
     background-color: #090E13;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* 版心 */
 .heart {
     width: 1200px;
     margin: 0 auto;
-    /* background-color: #fff; */
 }
 
-/* --- 顶部栏 --- */
+/* 清除列表圆点 */
+li {
+    list-style: none;
+}
+
+/* 清除链接下划线 */
+a {
+    text-decoration: none;
+}
+
+
+
+/* === 顶部栏 === */
 .header {
     background-color: #181E24;
     height: 50px;
@@ -105,7 +109,7 @@ a {
 }
 
 
-/* --- 大标题 --- */
+/* === 大标题 === */
 h1 {
     color: #E8E9EA;
     text-align: center;
@@ -113,7 +117,7 @@ h1 {
     font-size: 40px;
 }
 
-/* --- 左栏 --- */
+/* === 左栏 === */
 /* --- 主信息 --- */
 .left {
     float: left;
