@@ -46,19 +46,20 @@ a {
 }
 
 /* logo栏 */
-.header .logo {
+.logo {
     float: left;
     height: 50px;
     line-height: 50px;
     margin-left: 20px;
 }
 
-.header .logo img {
+.logo .icon-home {
     float: left;
+    font-size: 30px;
     margin: 10px 0;
 }
 
-.header .logo span {
+.logo span {
     float: left;
     font-weight: 700;
     color: #63B3FF;
@@ -67,9 +68,8 @@ a {
 
 /* 导航栏 */
 .header .nav {
-    float: left;
+    /* float: left; */
     width: 360px;
-    margin: 0 auto;
 }
 
 .header .nav ul li {
@@ -129,6 +129,7 @@ h1 {
     background: #181E24;
     border-radius: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /* 头像 */
@@ -174,12 +175,15 @@ h1 {
     display: block;
 }
 
-.info .relation a img {
-    width: 30px;
+.info .relation .icon-github {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    color: #4c525a;
 }
 
-.info .relation a:hover img {
-    background-color: #63B3FF;
+.info .relation .icon-github:hover {
+    color: #63B3FF;
 }
 
 /* --- 等级 --- */
@@ -192,17 +196,26 @@ h1 {
 }
 
 .level h3 {
-    border-left: 6px solid #63B3FF;
+    float: left;
     color: #fff;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.level .icon-cpu {
+    float: left;
+    margin: 20px;
+    color: #63B3FF;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .level p {
+    float: left;
     color: #fff;
     font-weight: 400;
     margin: 20px;
+    margin-left: 0;
 }
 
 /* --- 描述 --- */
@@ -214,19 +227,43 @@ h1 {
     overflow: hidden;
 }
 
+.describe .icon-align-left {
+    float: left;
+    margin: 20px;
+    color: #63B3FF;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .describe h3 {
-    border-left: 6px solid #63B3FF;
+    float: left;
     color: #fff;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-top: 20px;
+    width: 200px;
 }
 
 .describe p {
+    float: left;
     color: #fff;
     font-weight: 400;
     margin: 20px;
+    margin-top: 0;
 }
+
+/* --- 会一点的技能 --- */
+.ability {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #8d9298;
+    font-size: 14px;
+}
+
+.ability span {
+    font-size: 20px;
+    margin: 5px;
+}
+
 
 /* --- 右栏 --- */
 .right {
@@ -270,7 +307,7 @@ h1 {
 
 .right .column-right {
     float: right;
-    line-height: 85px;
+    line-height: 90px;
 }
 
 .right .column-right a {
@@ -282,6 +319,7 @@ h1 {
     color: #63B3FF;
     font-size: 40px;
     text-align: center;
+
 }
 
 .right .column-right a:hover {
