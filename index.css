@@ -271,6 +271,11 @@ h1 {
     width: 880px;
 }
 
+.y-line {
+    border: 4px solid #63B3FF;
+    border-radius: 4px;
+}
+
 .column-left {
     float: left;
     width: 780px;
@@ -286,17 +291,17 @@ h1 {
 }
 
 .column-left a {
-    display: block;
-    margin: 0px 0 10px 0px;
-    border-left: 6px solid #63B3FF;
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
     padding-left: 20px;
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+    vertical-align: middle;
 }
 
 .column-left p {
-    margin: 20px 0 0px 30px;
+    margin: 10px 0 0px 30px;
     color: #cfcfcf;
     font-size: 16px;
 }
@@ -324,4 +329,20 @@ h1 {
 
 .right .column-right a:hover {
     background-color: #324457;
+}
+
+.view {
+    position: relative;
+}
+
+.view img {
+    position: absolute;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: opacity 1s;
+}
+
+.change {
+    opacity: 0;
+
 }

@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小明同学的个人博客</title>
+    <title>小明同学的个人网站</title>
+    <meta name="description" content="xmtx_blog">
+    <meta name="keyword" content="blog,code">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="icomoon/style.css">
 </head>
@@ -23,11 +26,11 @@
                 <li><a href="#">主页</a></li>
                 <li><a href="#">博客</a></li>
                 <li><a href="#">关于</a></li>
-                <li><a href="https://github.com/coder-xmtx">GitHub</a></li>
+                <li><a href="https://github.com/coder-xmtx" target="_blank">GitHub</a></li>
             </ul>
         </div>
         <!-- 搜索框区域 -->
-        <input type="search" name="search" id="search" value="搜索">
+        <input type="search" name="search" id="search" placeholder="搜索">
     </div>
 
     <!-- 背景图 -->
@@ -43,13 +46,13 @@
 
             <!-- 主要信息 -->
             <div class="info">
-                <p class="portrait"><img src="image/portrait.webp" alt="小明同学"></p>
+                <p class="portrait"><img src="image/portrait.webp" alt="小明同学" title="小明同学"></p>
                 <h2>小明同学</h2>
                 <div class="x-line"></div>
                 <p>余念向来难安</p>
                 <p>而我一直孤单</p>
                 <div class="relation">
-                    <a href="https://github.com/coder-xmtx">
+                    <a href="https://github.com/coder-xmtx" target="_blank">
                         <div class="icon-github"></div>
                     </a>
                 </div>
@@ -84,36 +87,55 @@
             <ul>
                 <li>
                     <div class="column-left">
-                        <a href="example_1/example.html">案例学习 - "学成在线" 网页布局</a>
+                        <span class="y-line"></span>
+                        <a href="example_1/example.html" target="_blank">案例学习 - "学成在线" 网页布局</a>
                         <p>学习Web 跟着案例教程 尝试大型网页布局制作</p>
                     </div>
                     <div class="column-right">
-                        <a href="example_1/example.html"><span class="icon-chevrons-right"></span></a>
+                        <a href="example_1/example.html" target="_blank"><span class="icon-chevrons-right"></span></a>
                     </div>
                 </li>
                 <li>
                     <div class="column-left">
-                        <a href="https://github.com/coder-xmtx/Resource-Share">资源分享 - 得力工具</a>
+                        <span class="y-line"></span>
+                        <a href=#>案例学习 - "品优购" 网页布局</a>
+                        <p>学习Web 第2个大型网页布局</p>
+                    </div>
+                    <div class="column-right">
+                        <a href=#><span class="icon-chevrons-right"></span></a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="column-left">
+                        <span class="y-line"></span>
+                        <a href="https://github.com/coder-xmtx/Resource-Share" target="_blank">资源分享 - 得力工具</a>
                         <p>一些博主觉得好用的软件和网站 (还未建设)</p>
                     </div>
                     <div class="column-right">
-                        <a href="https://github.com/coder-xmtx/Resource-Share"><span
+                        <a href="https://github.com/coder-xmtx/Resource-Share" target="_blank"><span
                                 class="icon-chevrons-right"></span></a>
                     </div>
                 </li>
                 <li>
                     <div class="column-left">
-                        <a href="#">项目开发 - 学生论坛平台</a>
+                        <span class="y-line"></span>
+                        <a href="https://github.com/coder-xmtx/Free-Music" target="_blank">项目开发 - Free Music</a>
                         <p>来自博主的设想,还有好多要学😎</p>
                     </div>
                     <div class="column-right">
-                        <a href="#"><span class="icon-chevrons-right"></span></a>
+                        <a href="https://github.com/coder-xmtx/Free-Music" target="_blank"><span
+                                class="icon-chevrons-right"></span></a>
                     </div>
                 </li>
             </ul>
-            <img src="image/sky.jpg" alt="" width="100%" style="border-radius: 20px; margin-bottom: 30px;">
+            <div class="view">
+                <img src="image/sky.jpg" alt="sky" width="100%" class="change">
+                <img src="image/sky-two.jpg" alt="sky-two" width="100%">
+            </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
