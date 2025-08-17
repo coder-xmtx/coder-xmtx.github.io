@@ -141,6 +141,12 @@ h1 {
     width: 90%;
     border-radius: 20px;
     margin: 15px 0;
+    transition: all 0.3s;
+}
+
+.info img:hover {
+    /* transform: scale(); */
+    transform: scale3d(1.02, 1.02, 2);
 }
 
 .info h2 {
@@ -324,7 +330,6 @@ h1 {
     color: #63B3FF;
     font-size: 40px;
     text-align: center;
-
 }
 
 .right .column-right a:hover {
