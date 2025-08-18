@@ -41,13 +41,14 @@ a {
 
 /* === 顶部栏 === */
 .header {
+    display: flex;
+    justify-content: space-between;
     background-color: #181E24;
     height: 50px;
 }
 
 /* logo栏 */
 .logo {
-    float: left;
     height: 50px;
     line-height: 50px;
     margin-left: 20px;
@@ -68,7 +69,6 @@ a {
 
 /* 导航栏 */
 .header .nav {
-    /* float: left; */
     width: 360px;
 }
 
@@ -83,6 +83,7 @@ a {
     font-weight: 700;
     padding: 10px 15px;
     border-radius: 5px;
+    transition: all 0.5s;
 }
 
 .header .nav li a:hover {
@@ -92,11 +93,9 @@ a {
 
 /* 搜索框 */
 .header input {
-    float: right;
     border: 0;
     border-radius: 5px;
     margin: 10px 20px;
-    margin-left: 0;
     padding: 5px;
     height: 30px;
     width: 140px;
@@ -145,8 +144,7 @@ h1 {
 }
 
 .info img:hover {
-    /* transform: scale(); */
-    transform: scale3d(1.02, 1.02, 2);
+    transform: scale(1.02, 1.02);
 }
 
 .info h2 {
@@ -186,6 +184,7 @@ h1 {
     text-align: center;
     margin-top: 15px;
     color: #4c525a;
+    transition: all 0.5s;
 }
 
 .info .relation .icon-github:hover {
@@ -304,6 +303,7 @@ h1 {
     font-size: 30px;
     font-weight: 700;
     vertical-align: middle;
+    transition: all 0.3s;
 }
 
 .column-left p {
@@ -314,6 +314,7 @@ h1 {
 
 .column-left a:hover {
     color: #63B3FF;
+    transform: translate(5px, 0);
 }
 
 .right .column-right {
@@ -330,10 +331,12 @@ h1 {
     color: #63B3FF;
     font-size: 40px;
     text-align: center;
+    transition: all 0.3s;
 }
 
 .right .column-right a:hover {
     background-color: #324457;
+    transform: translate(5px, 0);
 }
 
 .view {
