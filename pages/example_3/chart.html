@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin: 50px auto;
+            width: 700px;
+            background-color: rgba(226, 204, 185, 0.3);
+            border-left: 2px solid #222329;
+            border-bottom: 2px solid #222329;
+            padding-top: 20px;
+            border-radius: 0 5px 0 0;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            background-color: #0F4E96;
+            width: 50px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .column p:nth-child(1) {
+            margin-top: -20px;
+        }
+
+        .column p:nth-child(2) {
+            margin-bottom: -30px;
+            width: 70px;
+            margin-left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 此时还没学DOM操作 -->
+
+    <script>
+        let arr = []
+        for (let i = 1; i <= 4; i++) {
+            let num = Number(prompt(`请输入第${i}季度的数据`))
+            arr.push(num)
+        }
+        console.log(...arr)
+        document.write(`<div class="box">`)
+        for (let i = 0; i < 4; i++) {
+            document.write(`
+            <div class="column" style="height: ${arr[i]}px;">
+                <p>${arr[i]}</p>
+                <p>第${i + 1}季度</p>
+            </div>
+            `)
+        }
+        document.write(`</div>`)
+    </script>
+</body>
+
+</html>
