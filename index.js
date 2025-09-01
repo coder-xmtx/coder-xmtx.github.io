@@ -1,13 +1,30 @@
 // 照片轮播
-let view = document.querySelector('.view')
-let items = view.children
-let index = 0
-
+const views = document.querySelectorAll('.view img')
+let current = 0
 setInterval(function () {
-    items[index].className = ''
-    if (index === items.length - 1) {
-        index = -1
+    current = (current + 1) % views.length
+    views.forEach(view => view.classList.remove('change'))
+    views[current].classList.add('change')
+}, 6000)
+
+
+// 返回顶部
+const h1 = document.querySelector('h1')
+const upBtn = document.querySelector('.up')
+window.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop >= h1.offsetTop) {
+        upBtn.classList.add('up-active')
+        upBtn.disabled = false
     }
-    index++
-    items[index].className = 'change'
-}, 10000)
+    else {
+        upBtn.classList.remove('up-active')
+        upBtn.disabled = true
+    }
+})
+
+upBtn.addEventListener('click', function () {
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})
