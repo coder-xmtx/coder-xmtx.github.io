@@ -1,6 +1,7 @@
 # 🖼️coder-xmtx website
 
-> [!tip] Version: 1.2
+> [!tip] 
+> Version: 1.2
 
 👋你好，这里是小明同学，一位青铜级程序员 <br/>
 这个项目仓库用来搭建我的个人网站
