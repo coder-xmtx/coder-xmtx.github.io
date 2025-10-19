@@ -1,174 +1,315 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>小明同学的个人网站</title>
-    <meta name="description" content="xmtx_website">
-    <meta name="keyword" content="blog,code,website">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="icomoon/style.css">
-</head>
+    <meta name="description" content="xmtx_website" />
+    <meta name="keyword" content="blog,code,website" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入icomoon图标 -->
+    <link rel="stylesheet" href="icomoon/style.css" />
+    <style>
+      /* 自定义样式 */
+      .glass-effect {
+        backdrop-filter: blur(10px);
+        background-color: rgba(24, 30, 36, 0.8);
+      }
+      .hover-lift {
+        transition: all 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
 
-<body>
-    <!-- 顶部栏布局 -->
-    <div class="header">
-        <!-- logo区域 -->
-        <div class="logo">
-            <span class="icon-home"></span>
-            <span>小明同学</span>
+  <body class="bg-[#090E13] text-gray-300">
+    <!-- 顶部导航栏 -->
+    <header class="bg-[#181E24] py-3 sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- Logo区域 -->
+        <div class="flex items-center mb-4 md:mb-0">
+          <span class="icon-home text-2xl text-[#63B3FF] mr-2"></span>
+          <span class="text-xl font-bold text-[#63B3FF]">小明同学</span>
         </div>
-        <!-- 导航栏区域 -->
-        <div class="nav heart">
-            <ul>
-                <li><a href="#">主页</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="https://github.com/coder-xmtx" target="_blank">GitHub</a></li>
-            </ul>
+
+        <!-- 导航菜单 -->
+        <nav class="mb-4 md:mb-0">
+          <ul class="flex space-x-4 md:space-x-6">
+            <li>
+              <a
+                href="#"
+                class="text-[#C5C7C8] hover:text-[#63B3FF] px-3 py-2 rounded-md transition-colors"
+                >主页</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#C5C7C8] hover:text-[#63B3FF] px-3 py-2 rounded-md transition-colors"
+                >博客</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-[#C5C7C8] hover:text-[#63B3FF] px-3 py-2 rounded-md transition-colors"
+                >关于</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/coder-xmtx"
+                target="_blank"
+                class="text-[#C5C7C8] hover:text-[#63B3FF] px-3 py-2 rounded-md transition-colors"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- 搜索框 -->
+        <div class="w-full md:w-auto">
+          <input
+            type="search"
+            placeholder="搜索"
+            class="w-full md:w-40 bg-[#24292F] text-[#868788] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#63B3FF]"
+          />
         </div>
-        <!-- 搜索框区域 -->
-        <input type="search" name="search" id="search" placeholder="搜索">
-    </div>
+      </div>
+    </header>
 
     <!-- 背景图 -->
-    <img src="image/background.webp" alt="" width="100%">
+    <div class="w-full overflow-hidden">
+      <img src="image/background.webp" alt="背景图" class="w-full h-auto" />
+    </div>
 
     <!-- 大标题 -->
-    <h1>👋你好，我是小明同学，欢迎来到我的博客！</h1>
+    <h1 class="text-2xl md:text-4xl text-center text-white my-8 md:my-12 px-4">
+      👋你好，我是小明同学，欢迎来到我的博客！
+    </h1>
 
     <!-- 主要内容 -->
-    <div class="heart">
+    <main class="container mx-auto px-4 pb-12">
+      <div class="flex flex-col lg:flex-row gap-8">
         <!-- 左栏 -->
-        <div class="left">
-
-            <!-- 主要信息 -->
-            <div class="info">
-                <p class="portrait"><img src="image/portrait.webp" alt="小明同学" title="小明同学"></p>
-                <h2>小明同学</h2>
-                <div class="x-line"></div>
-                <p>余念向来难安</p>
-                <p>而我一直孤单</p>
-                <div class="relation">
-                    <a href="https://github.com/coder-xmtx" target="_blank">
-                        <div class="icon-github"></div>
-                    </a>
-                </div>
+        <div class="w-full lg:w-1/4 space-y-6">
+          <!-- 主要信息卡片 -->
+          <div class="bg-[#181E24] rounded-2xl p-6 text-center hover-lift">
+            <div class="mb-4">
+              <img
+                src="image/portrait.webp"
+                alt="小明同学"
+                title="小明同学"
+                class="w-full rounded-xl mx-auto transition-transform duration-300 hover:scale-105"
+              />
             </div>
-
-            <!-- 等级 -->
-            <div class="level">
-                <div class="icon-cpu"></div>
-                <h3> 等级</h3>
-                <p>青铜级程序员</p>
+            <h2 class="text-2xl font-bold text-white mb-2">小明同学</h2>
+            <div
+              class="h-1.5 w-12 bg-[#63B3FF] rounded-full mx-auto mb-4"
+            ></div>
+            <p class="text-[#9B9B9B]">余念向来难安</p>
+            <p class="text-[#9B9B9B] mb-4">而我一直孤单</p>
+            <div class="flex justify-center">
+              <a
+                href="https://github.com/coder-xmtx"
+                target="_blank"
+                class="text-[#4c525a] hover:text-[#63B3FF] transition-colors"
+              >
+                <span class="icon-github text-2xl"></span>
+              </a>
             </div>
+          </div>
 
-            <!-- 描述 -->
-            <div class="describe">
-                <div class="icon-align-left"></div>
-                <h3>描述</h3>
-                <p>经常三分钟热度，现在自学前端知识</p>
+          <!-- 等级卡片 -->
+          <div class="bg-[#181E24] rounded-2xl p-6 hover-lift">
+            <div class="flex items-start">
+              <span class="icon-cpu text-2xl text-[#63B3FF] mr-4"></span>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-1">等级</h3>
+                <p class="text-white">青铜级程序员</p>
+              </div>
             </div>
+          </div>
 
-            <!-- 会一点的技能 -->
-            <div class="describe ability">
-
-                <span class="icon-python"></span>Python
-                <span class="icon-html5"></span>HTML
-                <span class="icon-adobepremiere"></span>Premiere Pro
-
+          <!-- 描述卡片 -->
+          <div class="bg-[#181E24] rounded-2xl p-6 hover-lift">
+            <div class="flex items-start">
+              <span class="icon-align-left text-2xl text-[#63B3FF] mr-4"></span>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-1">描述</h3>
+                <p class="text-white">经常三分钟热度，现在自学前端知识</p>
+              </div>
             </div>
+          </div>
+
+          <!-- 技能卡片 -->
+          <div class="bg-[#181E24] rounded-2xl p-6 text-center hover-lift">
+            <div class="flex justify-center space-x-4 text-[#8d9298]">
+              <div class="flex flex-col items-center">
+                <span class="icon-python text-xl mb-1"></span>
+                <span class="text-sm">Python</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <span class="icon-html5 text-xl mb-1"></span>
+                <span class="text-sm">HTML</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <span class="icon-adobepremiere text-xl mb-1"></span>
+                <span class="text-sm">Premiere</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- 右栏 -->
-        <div class="right">
-            <ul>
-                <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href="pages/example_1/example.html" target="_blank">案例学习 - "学成在线" 网页布局</a>
-                        <p>学习Web 跟着案例教程 尝试大型网页布局制作</p>
-                    </div>
-                    <div class="column-right">
-                        <a href="pages/example_1/example.html" target="_blank"><span
-                                class="icon-chevrons-right"></span></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href=#>回炉重造 - 正在施工</a>
-                        <p>服了学的太慢了</p>
-                    </div>
-                    <div class="column-right">
-                        <a href=#><span class="icon-chevrons-right"></span></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href=#>聊聊闲话 - 论学数学的来征服前端</a>
-                        <p>整个网站肯定要重构的，不过现在看来遥遥无期</p>
-                    </div>
-                    <div class="column-right">
-                        <a href=#><span class="icon-chevrons-right"></span></a>
-                    </div>
-                </li>
-                <!-- <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href=#>案例学习 - "品优购" 网页布局</a>
-                        <p>学习Web 第2个大型网页布局</p>
-                    </div>
-                    <div class="column-right">
-                        <a href=#><span class="icon-chevrons-right"></span></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href="https://github.com/coder-xmtx/Resource-Share" target="_blank">资源分享 - 得力工具</a>
-                        <p>一些博主觉得好用的软件和网站 (还未建设)</p>
-                    </div>
-                    <div class="column-right">
-                        <a href="https://github.com/coder-xmtx/Resource-Share" target="_blank"><span
-                                class="icon-chevrons-right"></span></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href="https://github.com/coder-xmtx/Free-Music" target="_blank">项目开发 - Free Music</a>
-                        <p>来自博主的设想,还有好多要学😎</p>
-                    </div>
-                    <div class="column-right">
-                        <a href="https://github.com/coder-xmtx/Free-Music" target="_blank"><span
-                                class="icon-chevrons-right"></span></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="column-left">
-                        <span class="y-line"></span>
-                        <a href="pages/example_3/chart.html" target="_blank">小小玩意 - 鼓捣鼓捣</a>
-                        <p>一些博主在练习JS时的小案例</p>
-                    </div>
-                    <div class="column-right">
-                        <a href="pages/example_3/chart.html" target="_blank"><span
-                                class="icon-chevrons-right"></span></a>
-                    </div>
-                </li> -->
-            </ul>
-            <div class="view">
-                <img src="image/sky.jpg" alt="sky" width="100%" class="change">
-                <img src="image/sky-two.jpg" alt="sky-two" width="100%">
+        <div class="w-full lg:w-3/4 space-y-6">
+          <!-- 项目列表 -->
+          <div class="space-y-6">
+            <!-- 项目1 -->
+            <div
+              class="bg-[#181E24] rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover-lift"
+            >
+              <div class="flex-1 mb-4 md:mb-0">
+                <div class="flex items-center mb-2">
+                  <span class="w-2 h-2 bg-[#63B3FF] rounded-full mr-3"></span>
+                  <a
+                    href="pages/example_1/example.html"
+                    target="_blank"
+                    class="text-xl md:text-2xl font-bold text-white hover:text-[#63B3FF] transition-colors"
+                    >案例学习 - "学成在线" 网页布局</a
+                  >
+                </div>
+                <p class="text-[#cfcfcf] ml-5">
+                  学习Web 跟着案例教程 尝试大型网页布局制作
+                </p>
+              </div>
+              <a
+                href="pages/example_1/example.html"
+                target="_blank"
+                class="bg-[#283747] hover:bg-[#324457] text-[#63B3FF] rounded-lg p-3 transition-all duration-300 hover:translate-x-1"
+              >
+                <span class="icon-chevrons-right text-2xl"></span>
+              </a>
             </div>
-        </div>
-    </div>
-    <!-- 返回顶部 -->
-    <button class="up">UP</button>
-    <script src="index.js"></script>
-</body>
 
+            <!-- 项目2 -->
+            <div
+              class="bg-[#181E24] rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover-lift"
+            >
+              <div class="flex-1 mb-4 md:mb-0">
+                <div class="flex items-center mb-2">
+                  <span class="w-2 h-2 bg-[#63B3FF] rounded-full mr-3"></span>
+                  <a
+                    href="#"
+                    class="text-xl md:text-2xl font-bold text-white hover:text-[#63B3FF] transition-colors"
+                    >回炉重造 - 正在施工</a
+                  >
+                </div>
+                <p class="text-[#cfcfcf] ml-5">服了学的太慢了</p>
+              </div>
+              <a
+                href="#"
+                class="bg-[#283747] hover:bg-[#324457] text-[#63B3FF] rounded-lg p-3 transition-all duration-300 hover:translate-x-1"
+              >
+                <span class="icon-chevrons-right text-2xl"></span>
+              </a>
+            </div>
+
+            <!-- 项目3 -->
+            <div
+              class="bg-[#181E24] rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover-lift"
+            >
+              <div class="flex-1 mb-4 md:mb-0">
+                <div class="flex items-center mb-2">
+                  <span class="w-2 h-2 bg-[#63B3FF] rounded-full mr-3"></span>
+                  <a
+                    href="#"
+                    class="text-xl md:text-2xl font-bold text-white hover:text-[#63B3FF] transition-colors"
+                    >聊聊闲话 - 论学数学的来征服前端</a
+                  >
+                </div>
+                <p class="text-[#cfcfcf] ml-5">
+                  整个网站肯定要重构的，不过现在看来遥遥无期
+                </p>
+              </div>
+              <a
+                href="#"
+                class="bg-[#283747] hover:bg-[#324457] text-[#63B3FF] rounded-lg p-3 transition-all duration-300 hover:translate-x-1"
+              >
+                <span class="icon-chevrons-right text-2xl"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 图片轮播 -->
+          <div class="relative h-64 md:h-80 rounded-2xl overflow-hidden">
+            <img
+              src="image/sky.jpg"
+              alt="天空"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+              id="slide1"
+            />
+            <img
+              src="image/sky-two.jpg"
+              alt="天空二"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+              id="slide2"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 返回顶部按钮 -->
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 w-12 h-12 bg-[#283747] hover:bg-[#324457] text-[#63B3FF] rounded-lg opacity-0 transition-opacity duration-300 flex items-center justify-center"
+    >
+      <span class="text-lg font-bold">UP</span>
+    </button>
+
+    <script>
+      // 图片轮播
+      let currentSlide = 0;
+      const slides = document.querySelectorAll("#slide1, #slide2");
+
+      function nextSlide() {
+        slides[currentSlide].classList.remove("opacity-100");
+        slides[currentSlide].classList.add("opacity-0");
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.remove("opacity-0");
+        slides[currentSlide].classList.add("opacity-100");
+      }
+
+      setInterval(nextSlide, 6000);
+
+      // 返回顶部功能
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+          backToTopBtn.classList.remove("opacity-0");
+          backToTopBtn.disabled = false;
+        } else {
+          backToTopBtn.classList.add("opacity-0");
+          backToTopBtn.disabled = true;
+        }
+      });
+
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
 </html>
