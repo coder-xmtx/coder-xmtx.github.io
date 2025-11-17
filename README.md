@@ -1,6 +1,6 @@
 # 🖼️coder-xmtx website
 
-> [!notice]
+> [!Important]
 > 该仓库停止更新，这个仓库已经完成了它的历史使命
 
 👋 你好，这里是小明同学，一位青铜级程序员 <br/>
